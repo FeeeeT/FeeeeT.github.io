@@ -49,7 +49,7 @@ li {
 .top {
   width: 100vw;
   height: 100vh;
-  background-image: url("img/headerback.jpg");
+  background-image: url("../images/headerback.jpg");
   background-size: cover;
   box-shadow: 0px 0px 4px;
   display: flex;
@@ -113,7 +113,7 @@ main a:hover {
 .content h1 {
   font-size: 300%;
   text-align: center;
-  padding: 5%;
+  padding: 10%;
 }
 
 .content .fas {
@@ -122,24 +122,21 @@ main a:hover {
 }
 
 .content h2 {
-  font-size: 180%;
-  margin-bottom: 5%;
+  font-size: 170%;
+  margin-bottom: 10%;
+  font-weight: 600;
+}
+
+.introduction, .codes, .tools, .hobby, .work {
+  margin: 10% 0 20% 0;
 }
 
 /* 自己紹介 */
-.introduction {
-  margin: 5% 0;
-}
-
 .introduction p {
   text-align: left;
 }
 
 /* プログラム言語ロゴ & 使用ツール */
-.codes, .tools {
-  margin: 5% 0;
-}
-
 .codes .flex, .tools .flex {
   display: flex;
   justify-content: center;
@@ -147,8 +144,8 @@ main a:hover {
 }
 
 .code, .tool {
-  width: 29%;
-  height: 29%;
+  width: 25%;
+  height: 25%;
   padding: 2%;
 }
 
@@ -166,13 +163,9 @@ main a:hover {
 }
 
 /* 趣味 */
-.hobby {
-  margin: 5% 0;
-}
-
 .hobbys h3 {
   font-size: 130%;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 }
 
 /* 制作品 */
@@ -189,10 +182,6 @@ main a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.work {
-  margin: 10% 0;
 }
 
 .work h3 {
@@ -262,6 +251,18 @@ main a:hover {
     font-size: 400%;
   }
 
+  .content h1 {
+    padding: 5%;
+  }
+
+  .content h2 {
+    margin-bottom: 5%;
+  }
+
+  .introduction, .codes, .tools, .hobby, .work {
+    margin: 5% 0 10% 0;
+  }
+
   .content {
     width: 700px;
   }
@@ -280,16 +281,19 @@ main a:hover {
 
   .code {
     width: calc(25% - 40px);
+    padding: 0;
     margin: 10px 5px 5px 5px;
   }
 
   .tool {
-    width: calc(30% - 40px);
+    width: 60px;
+    height: 60px;
+    padding: 0;
     margin: 10px 5px 5px 5px;
   }
 
   .code img, .tool img {
-    width: 40%;
+    width: 60px;
   }
 
   .work {
@@ -308,6 +312,7 @@ main a:hover {
   }
 }
 
+/* PCサイズ */
 @media screen and (min-width: 1200px) {
   .title {
     font-size: 30px;
@@ -318,7 +323,7 @@ main a:hover {
   }
 
   .content {
-    width: 800px;
+    width: 750px;
   }
 
   .topBtn {

@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Toshiki Fujimoto's portfolio</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <!-- 画像拡大用CSS -->
+  <link rel="stylesheet" href="css/lightbox.min.css" type="text/css">
   <!-- フォント -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
   <!-- アイコン -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="product.js" type="text/javascript"></script>
+  <script src="js/product.js" type="text/javascript"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -38,7 +40,7 @@
         <h1><i class="fas fa-user"></i>Profile</h1>
         <hr>
         <div class="introduction">
-          <h2>－ 自己紹介 －</h2>
+          <h2>自己紹介</h2>
           <p>
             初めまして、藤本俊輝と申します。<br>
             <a href="https://www.kcg.ac.jp/" target="_blank">京都コンピュータ学院 京都駅前校</a>の2回生です。<br>
@@ -48,65 +50,68 @@
         </div>
 
         <div class="codes">
-          <h2>－ 使用言語 －</h2>
+          <h2>使用言語</h2>
           <div class="flex">
             <div class="code">
-              <img src="img/cpp_logo.png" alt="C++">
+              <img src="images/cpp_logo.png" alt="C++">
               <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
             </div>
             <div class="code">
-              <img src="img/cs_logo.png" alt="C#">
+              <img src="images/cs_logo.png" alt="C#">
               <p>&#9733;&#9733;&#9733;&#9734;&#9734;<br>
                 <span class="small">※Unityでのみ</span></p>
             </div>
             <div class="code">
-              <img src="img/java_logo.png" alt="Java">
+              <img src="images/java_logo.png" alt="Java">
               <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
             </div>
             <div class="code">
-              <img src="img/html_logo.png" alt="HTML">
+              <img src="images/html_logo.png" alt="HTML">
               <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
             </div>
             <div class="code">
-              <img src="img/css_logo.png" alt="CSS">
+              <img src="images/css_logo.png" alt="CSS">
               <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
             </div>
             <div class="code">
-              <img src="img/js_logo.png" alt="JavaScript">
+              <img src="images/js_logo.png" alt="JavaScript">
               <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
             </div>
             <div class="code">
-              <img src="img/php_logo.png" alt="PHP">
+              <img src="images/php_logo.png" alt="PHP">
               <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
             </div>
           </div>
         </div>
 
         <div class="tools">
-          <h2>－ 使用ツール －</h2>
+          <h2>使用ツール</h2>
           <section>
             <div class="flex">
               <section class="tool">
-                <img src="img/vs_logo.png" alt="VS">
+                <img src="images/vs_logo.png" alt="VS">
               </section>
               <section class="tool">
-                <img src="img/eclipse_logo.png" alt="Eclipse">
+                <img src="images/eclipse_logo.png" alt="Eclipse">
               </section>
               <section class="tool">
-                <img src="img/unity_logo.png" alt="Unity">
+                <img src="images/unity_logo.png" alt="Unity">
               </section>
               <section class="tool">
-                <img src="img/atom_logo.png" alt="Atom">
+                <img src="images/atom_logo.png" alt="Atom">
               </section>
               <section class="tool">
-                <img src="img/sql_logo.png" alt="MySQL">
+                <img src="images/sql_logo.png" alt="MySQL">
+              </section>
+              <section class="tool">
+                <img src="images/github_logo.png" alt="GitHub">
               </section>
             </div>
           </section>
         </div>
 
         <div class="hobby">
-          <h2>－ 趣味 －</h2>
+          <h2>趣味</h2>
           <div class="hobbys">
             <h3>料理</h3>
             <p>自炊できるようにと、今年から始めました。</p><br>
@@ -126,42 +131,54 @@
         <h1><i class="fas fa-code"></i>Works</h1>
         <hr>
         <div class="works">
-          <h2>－ 学外制作品のみ －</h2>
+          <h2>校外制作品のみ</h2>
           <!-- ブログ -->
           <div class="flex">
             <div class="work">
               <h3>FeeeT's Blog</h3>
-              <img src="img/frame.png" alt="ブログ1" class="sample" width="49%">
-              <img src="img/frame.png" alt="ブログ2" class="sample" width="49%">
+              <a href="images/frame.png" data-lightbox="blog" data-title="記事一覧">
+                <img src="images/frame.png" alt="ブログ1" class="sample" width="49%">
+              </a>
+              <a href="images/frame.png" data-lightbox="blog" data-title="特定のユーザーのみ管理できます">
+                <img src="images/frame.png" alt="ブログ2" class="sample" width="49%">
+              </a>
               <br>
-              <img src="img/php_logo.png" class="logo" alt="PHP" width="20%">
-              <img src="img/sql_logo.png" class="logo" alt="MySQL" width="20%">
+              <img src="images/php_logo.png" class="logo" alt="PHP" width="20%">
+              <img src="images/sql_logo.png" class="logo" alt="MySQL" width="20%">
               <p>PHPとSQLのみで制作したブログ。<br>現在も制作中。</p>
             </div>
             <div class="work">
               <h3>居合斬</h3>
-              <img src="img/iai_sample1.png" alt="居合斬1" class="sample" width="49%">
-              <img src="img/iai_sample2.png" alt="居合斬2" class="sample" width="49%">
+              <a href="images/iai_sample1.png" data-lightbox="iai" data-title="合図が出た瞬間">
+                <img src="images/iai_sample1.png" alt="居合斬1" class="sample" width="49%">
+              </a>
+              <a href="images/iai_sample2.png" data-lightbox="iai" data-title="瞬時にタップする事で、敵を斬ります">
+                <img src="images/iai_sample2.png" alt="居合斬2" class="sample" width="49%">
+              </a>
               <br>
-              <img src="img/unity_logo.png" class="logo" alt="Unity" width="20%">
-              <img src="img/cs_logo.png" class="logo" alt="C#" width="20%">
-              <p>合図と同時に<br>指定時間内にタップするゲーム。</p>
+              <img src="images/unity_logo.png" class="logo" alt="Unity" width="20%">
+              <img src="images/cs_logo.png" class="logo" alt="C#" width="20%">
+              <p>合図と同時に<br>瞬時にタップして敵を斬るゲーム。</p>
             </div>
             <div class="work">
               <h3>ライフカウンター</h3>
-              <img src="img/life_sample1.png" alt="カウンター1" class="sample" width="100%">
+              <a href="images/life_sample1.png" data-lightbox="life" data-title="シンプルなデザインで、見やすくしています">
+                <img src="images/life_sample1.png" alt="カウンター1" class="sample" width="100%">
+              </a>
               <br>
-              <img src="img/unity_logo.png" class="logo" alt="Unity" width="20%">
-              <img src="img/cs_logo.png" class="logo" alt="C#" width="20%">
+              <img src="images/unity_logo.png" class="logo" alt="Unity" width="20%">
+              <img src="images/cs_logo.png" class="logo" alt="C#" width="20%">
               <p>TCG『<a href="https://www.aicarddass.com/zenonzard/" target="_blank">ゼノンザード</a>』で用いる<br>ライフカウンター。<br>ダイス、ルールブック表示機能有。</p>
             </div>
             <div class="work">
               <h3>ポートフォリオ</h3>
-              <img src="img/port_sample.png" alt="ポートフォリオ1" class="sample" width="49%">
+              <a href="images/port_sample.png" data-lightbox="portfolio" data-title="伝えたい事が伝わりやすいデザインを意識しました">
+                <img src="images/port_sample.png" alt="ポートフォリオ1" class="sample" width="49%">
+              </a>
               <br>
-              <img src="img/html_logo.png" class="logo" alt="HTML" width="20%">
-              <img src="img/css_logo.png" class="logo" alt="CSS" width="20%">
-              <img src="img/js_logo.png" class="logo" alt="JavaScript" width="20%">
+              <img src="images/html_logo.png" class="logo" alt="HTML" width="20%">
+              <img src="images/css_logo.png" class="logo" alt="CSS" width="20%">
+              <img src="images/js_logo.png" class="logo" alt="JavaScript" width="20%">
               <p>当サイト。<br>約1週間の突貫制作。</p>
             </div>
           </div>
@@ -181,6 +198,9 @@
   </main>
   <!-- TOPボタン -->
   <a href="#" class="topBtn" id="topBtn"></a>
+
+  <!-- 画像拡大プラグイン -->
+  <script src="js/lightbox.min.js" type="text/javascript"></script>
 </body>
 
 </html>
