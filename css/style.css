@@ -19,10 +19,6 @@ hr {
   margin: auto;
 }
 
-.small {
-  font-size: 50%;
-}
-
 .right {
   text-align: right;
 }
@@ -100,10 +96,6 @@ main a {
   color: #0066c0;
 }
 
-main a:hover {
-  color: #0066c0;
-}
-
 /* コンテンツ */
 .content {
   margin: auto;
@@ -127,7 +119,7 @@ main a:hover {
   font-weight: 600;
 }
 
-.introduction, .codes, .tools, .hobby, .work {
+.introduction, .codes, .tools, .hobby, .work, .email {
   margin: 10% 0 20% 0;
 }
 
@@ -154,6 +146,17 @@ main a:hover {
   text-align: center;
 }
 
+.code .fas, .code .far {
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+}
+
+.code .small {
+  font-size: 5%;
+  margin-top: 0;
+}
+
 .code img, .tool img {
   width: 55%;
 }
@@ -175,7 +178,12 @@ main a:hover {
 }
 
 .works {
-  padding: 5% 0;
+  margin: 10% 0 0 0;
+  padding: 0 5%;
+}
+
+.works a {
+  color: orange;
 }
 
 .works .flex {
@@ -185,7 +193,8 @@ main a:hover {
 }
 
 .work h3 {
-  font-size: 130%;
+  font-size: 150%;
+  font-weight: 600;
   margin-bottom: 3%;
 }
 
@@ -197,11 +206,12 @@ main a:hover {
   margin: 0;
   padding: 0;
   width: 15%;
+  background-color: white;
+  border: solid 5px white;
+  border-radius: 25%;
 }
 
 /* コンタクト */
-.email {}
-
 .email p {
   margin: 5% 0;
   text-align: center;
@@ -234,7 +244,7 @@ main a:hover {
 
 /* レスポンシブ対応 */
 /* タブレットサイズ */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   * {
     font-size: 18px;
   }
