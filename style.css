@@ -112,25 +112,22 @@ main a:hover {
 .content h1 {
   font-size: 300%;
   text-align: center;
-  padding: 10%;
+  padding: 5%;
 }
 
 .content .fas {
   font-size: 100%;
+  margin-right: 8px;
 }
 
 .content h2 {
   font-size: 180%;
-  margin-bottom: 10%;
-}
-
-.content .fas {
-  margin-right: 8px;
+  margin-bottom: 5%;
 }
 
 /* 自己紹介 */
 .introduction {
-  margin: 10% 0;
+  margin: 5% 0;
 }
 
 .introduction p {
@@ -139,7 +136,7 @@ main a:hover {
 
 /* プログラム言語ロゴ & 使用ツール */
 .codes, .tools {
-  margin: 10% 0;
+  margin: 5% 0;
 }
 
 .codes .flex, .tools .flex {
@@ -169,7 +166,7 @@ main a:hover {
 
 /* 趣味 */
 .hobby {
-  margin: 10% 0;
+  margin: 5% 0;
 }
 
 .hobbys h3 {
@@ -184,7 +181,7 @@ main a:hover {
 }
 
 .works {
-  padding: 10% 0;
+  padding: 5% 0;
 }
 
 .works .flex {
@@ -216,7 +213,7 @@ main a:hover {
 .email {}
 
 .email p {
-  margin: 10% 0;
+  margin: 5% 0;
   text-align: center;
   font-size: 120%;
 }
@@ -247,22 +244,38 @@ main a:hover {
 
 /* レスポンシブ対応 */
 /* タブレットサイズ */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
   * {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .title {
-    margin-top: 30%;
-    font-size: 200%;
+    margin-top: calc(100vh - 100vw);
+    font-size: 2.8vw;
+  }
+
+  .title br {
+    display: none;
   }
 
   nav {
-    margin-top: 30%;
+    margin-top: calc(100vh - 100vw);
   }
 
   .nav_menu_item .fas {
-    font-size: 500%;
+    font-size: 400%;
+  }
+
+  .content {
+    width: 700px;
+  }
+
+  .content h1 {
+    font-size: 300%;
+  }
+
+  .content h2 {
+    font-size: 150%;
   }
 
   .introduction p {
@@ -275,7 +288,7 @@ main a:hover {
   }
 
   .tool {
-    width: calc(25% - 40px);
+    width: calc(30% - 40px);
     margin: 10px 5px 5px 5px;
   }
 
@@ -300,123 +313,32 @@ main a:hover {
   }
 }
 
-/* PCサイズ */
 @media screen and (min-width: 1200px) {
-  body {
-    font-size: 100%;
-  }
-
-  hr {
-    width: 5vw;
-    margin: auto;
-  }
-
-  .top {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("img/headerback.jpg");
-    background-size: cover;
-    box-shadow: 0px 0px 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
   .title {
-    font-size: 3vw;
-    text-align: center;
-    margin-top: 10vw;
-  }
-
-  .title br {
-    display: none;
+    margin: auto;
+    margin-top: 18%;
+    font-size: 30px;
   }
 
   nav {
-    margin-top: 10vw;
+    margin: auto;
   }
 
   .nav_menu_item {
-    margin: 0 3vw;
-    font-size: 1vw;
-  }
-
-  .nav_menu_item .fas {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    font-size: 280%;
-    padding-bottom: 5px;
+    margin: 0 100px;
   }
 
   .content {
-    margin: auto;
-    width: 50vw;
-  }
-
-  .content h1 {
-    font-size: 3vw;
-    text-align: center;
-    padding: 10%;
-  }
-
-  .content h2 {
-    font-size: 2vw;
-    margin-bottom: 10%;
-  }
-
-  .content .fas {
-    margin-right: 8px;
-  }
-
-  .introduction p {
-    text-align: center;
-  }
-
-  .code {
-    width: 15%;
-    margin: 10px 5px 5px 5px;
-  }
-
-  .code p {
-    font-size: 75%;
-  }
-
-  .tool {
-    width: 50%;
-    margin: 10px 5px 5px 5px;
-  }
-
-  .code img, .tool img {
-    width: 100%;
-  }
-
-  .work {
-    width: calc(50% - 60px);
-    margin: 30px 20px 80px;
+    width: 800px;
   }
 
   .topBtn {
-    position: fixed;
-    bottom: 3vw;
-    right: 4vw;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    width: 6vw;
-    height: 6vw;
-    border-radius: 50%;
+    width: 80px;
+    height: 80px;
   }
 
   .topBtn:before {
-    content: '\25B2';
-    position: absolute;
-    color: #fff;
-    top: 11%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 3vw;
+    top: 10px;
+    font-size: 40px;
   }
 }
