@@ -247,7 +247,11 @@ main a:hover {
 
 /* レスポンシブ対応 */
 /* タブレットサイズ */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
+  * {
+    font-size: 20px;
+  }
+
   .title {
     margin-top: 30%;
     font-size: 200%;
@@ -258,7 +262,7 @@ main a:hover {
   }
 
   .nav_menu_item .fas {
-    font-size: 400%;
+    font-size: 500%;
   }
 
   .introduction p {
@@ -297,7 +301,7 @@ main a:hover {
 }
 
 /* PCサイズ */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   body {
     font-size: 100%;
   }
