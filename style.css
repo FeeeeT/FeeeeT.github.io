@@ -60,7 +60,7 @@ li {
 
 .title {
   text-align: center;
-  margin-top: 50%;
+  margin-top: auto;
 }
 
 .title p {
@@ -68,7 +68,8 @@ li {
 }
 
 nav {
-  margin-top: 50%;
+  margin-top: auto;
+  margin-bottom: 10%;
 }
 
 .nav_menu {
@@ -226,8 +227,8 @@ main a:hover {
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
-  width: 12vw;
-  height: 12vw;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -235,11 +236,11 @@ main a:hover {
   content: '\25B2';
   position: absolute;
   color: #fff;
-  top: 1.5vw;
+  top: 6px;
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 6vw;
+  font-size: 25px;
 }
 
 /* レスポンシブ対応 */
@@ -250,16 +251,11 @@ main a:hover {
   }
 
   .title {
-    margin-top: calc(100vh - 100vw);
     font-size: 2.8vw;
   }
 
   .title br {
     display: none;
-  }
-
-  nav {
-    margin-top: calc(100vh - 100vw);
   }
 
   .nav_menu_item .fas {
@@ -302,26 +298,19 @@ main a:hover {
   }
 
   .topBtn {
-    width: 6vw;
-    height: 6vw;
+    width: 70px;
+    height: 70px;
   }
 
   .topBtn:before {
-    top: 11%;
-    left: 0;
-    font-size: 3vw;
+    top: 7px;
+    font-size: 35px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .title {
-    margin: auto;
-    margin-top: 18%;
     font-size: 30px;
-  }
-
-  nav {
-    margin: auto;
   }
 
   .nav_menu_item {
