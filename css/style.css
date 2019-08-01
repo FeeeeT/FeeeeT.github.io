@@ -192,10 +192,18 @@ main a {
   flex-wrap: wrap;
 }
 
+.work-title {
+  margin-bottom: 3%;
+}
+
 .work h3 {
   font-size: 150%;
   font-weight: 600;
-  margin-bottom: 3%;
+  margin: 0 3% 3% 3%;
+}
+
+.work .fas, .work .fab {
+  font-size: 150%;
 }
 
 .work .sample {
